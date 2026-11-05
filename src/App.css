@@ -1,0 +1,195 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f3f1fa;
+  color: #29243a;
+}
+
+.App {
+  min-height: 100vh;
+}
+
+/* Navigation */
+.navbar {
+  background: #34245f;
+  color: white;
+  padding: 20px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin-left: 25px;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: #d6c5ff;
+}
+
+/* Sign up form */
+.signup-container {
+  max-width: 450px;
+  margin: 60px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.signup-container h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #34245f;
+}
+
+.signup-container p {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #777;
+}
+
+.signup-container label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.signup-container input:not([type="checkbox"]),
+.signup-container select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  outline: none;
+}
+
+.signup-container input:focus,
+.signup-container select:focus {
+  border-color: #6c48bd;
+}
+
+.checkbox-label {
+  display: flex !important;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.checkbox-label input {
+  accent-color: #6c48bd;
+}
+
+button {
+  background: #6c48bd;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 7px;
+  cursor: pointer;
+  margin: 5px;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #49318a;
+}
+
+button:disabled {
+  background: #aaa;
+  cursor: not-allowed;
+}
+
+.message {
+  margin-top: 20px;
+  color: #287a45 !important;
+}
+
+/* State management */
+.state-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.state-container h1 {
+  text-align: center;
+  color: #34245f;
+  margin-bottom: 30px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+.card h2 {
+  color: #49318a;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  font-size: 35px;
+  margin-bottom: 15px;
+}
+
+.card input[type="text"] {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  margin: 8px;
+  max-width: 100%;
+}
+
+.card p {
+  margin: 12px 0;
+}
+
+.task {
+  margin-top: 15px;
+}
+
+.task label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .navbar a {
+    margin: 0 8px;
+  }
+
+  .signup-container {
+    margin: 30px 15px;
+  }
+
+  .state-container {
+    padding: 15px;
+  }
+}
